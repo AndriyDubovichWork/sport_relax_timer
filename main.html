@@ -10,10 +10,18 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <button onclick="Start()" id = 'start'>Start</button><br/>
+        <div id = 'main'>
         
-        <progress id="progressbar" max="140" value="0">  </progress>
-        <h1 id = 'RelaxSport'>Relax</h1>
+            <button onclick="Start()" id = 'start'>Start</button>
+            <input id='relaxTime'></input>
+            <input id='workTime'></input>
+            <button id = 'stop'>Stop</button>
+            <br/>
+        
+            <progress id="progressbar" max="140" value="0">  </progress>
+            <h1 id = 'RelaxSport'>Relax</h1>
+        </div>
+        
         <script src="app.js" async defer></script>
     </body>
 </html>
