@@ -30,23 +30,24 @@ function Start(){
   document.body.style.background = "rgb(50,255,0)";
   document.body.style.background = "linear-gradient(90deg, rgba(50,255,0,1) 0%, rgba(0,212,255,1) 100%)";
   RelaxSport.innerHTML ='Relax'
-  function timer_15(){
+  function timer_1(){
+  
   document. getElementById("start").disabled = true
-  timer15=setTimeout(
+  timer1=setTimeout(
     () => {
       if(FuncchangeCount<14){
         
         
         document.body.style.background = "rgb(40,0,255)";
         document.body.style.background = "linear-gradient(90deg, rgba(40,0,255,1) 0%, rgba(255,0,0,1) 100%)";
-        timer_45()
+        timer_2()
         audio.play()
         ++FuncchangeCount
         progressbar.value=FuncchangeCount*10
         RelaxSport.innerHTML ='Sport'
 
       }else{
-        clearTimeout(timer15);
+        clearTimeout(timer1);
         document. getElementById("start").disabled = false
         document.getElementById('relaxTime').disabled=false
         document.getElementById('workTime').disabled=false
@@ -60,29 +61,29 @@ function Start(){
     document.getElementById('relaxTime').disabled=false
     document.getElementById('workTime').disabled=false
     progressbar.value=0
-    clearTimeout(timer45);
-    clearTimeout(timer15);
+    clearTimeout(timer2);
+    clearTimeout(timer1);
     document.body.style.background = "rgb(50,255,0)";
     document.body.style.background = "linear-gradient(90deg, rgba(50,255,0,1) 0%, rgba(0,212,255,1) 100%)";
     RelaxSport.innerHTML ='Relax'
   }
   }
-  function timer_45(){
+  function timer_2(){
   
   document. getElementById("start").disabled = true
-  timer45=setTimeout(
+  timer2=setTimeout(
     () => {
       if(FuncchangeCount<14){
         
         document.body.style.background = "rgb(50,255,0)";
         document.body.style.background = "linear-gradient(90deg, rgba(50,255,0,1) 0%, rgba(0,212,255,1) 100%)";
-        timer_15()
+        timer_1()
         audio.play()
         ++FuncchangeCount
         progressbar.value=FuncchangeCount*10
         RelaxSport.innerHTML ='Relax'
       }else{
-        clearTimeout(timer45);
+        clearTimeout(timer2);
         document. getElementById("start").disabled = false
         document.getElementById('relaxTime').disabled=false
         document.getElementById('workTime').disabled=false
@@ -96,14 +97,14 @@ function Start(){
     document.getElementById('relaxTime').disabled=false
     document.getElementById('workTime').disabled=false
     progressbar.value=0
-    clearTimeout(timer45);
-    clearTimeout(timer15);
+    clearTimeout(timer2);
+    clearTimeout(timer1);
     document.body.style.background = "rgb(50,255,0)";
     document.body.style.background = "linear-gradient(90deg, rgba(50,255,0,1) 0%, rgba(0,212,255,1) 100%)";
     RelaxSport.innerHTML ='Relax'
   }
   }
-  timer_15()
+  timer_1()
 
 
 }
